@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Library system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li style="float:right"><a href="#register">Register</a></li>
+            <li style="float:right"><a href="#books">Books</a></li>
+        </ul>  
+         
+    </nav>
+
+    <br><br>
+
+    <h1>Library system</h1>
+
+<div id="bookslist">
+    <h2 id="books"><i>Books</i></h2>
+    <table>
+        <thead>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    Book Title 1
+                    <table>
+                        <tr><td>Publication Date: 2000</td></tr>
+                        <tr><td>Page Count: 250</td></tr>
+                        <tr><td>ISBN: 123-4567890123</td></tr>
+                    </table>
+                </td>
+                <td>Author Name 1</td>
+                <td>Genre 1</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    Book Title 2
+                    <table>
+                        <tr><td>Publication Date: 2003</td></tr>
+                        <tr><td>Page Count: 350</td></tr>
+                        <tr><td>ISBN: 122-4567890123</td></tr>
+                    </table>
+                </td>
+                <td>Author Name 2</td>
+                <td>Genre 2</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    Book Title 3
+                    <table>
+                        <tr><td>Publication Date: 2006</td></tr>
+                        <tr><td>Page Count: 450</td></tr>
+                        <tr><td>ISBN: 120-4567890123</td></tr>
+                    </table>
+                </td>
+                <td>Author Name 3</td>
+                <td>Genre 3</td>
+                <td>Not Available</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    Book Title 4
+                    <table>
+                        <tr><td>Publication Date: 2009</td></tr>
+                        <tr><td>Page Count: 550</td></tr>
+                        <tr><td>ISBN: 128-4567890123</td></tr>
+                    </table>
+                </td>
+                <td>Author Name 4</td>
+                <td>Genre 4</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    Book Title 5
+                    <table>
+                        <tr><td>Publication Date: 2011</td></tr>
+                        <tr><td>Page Count: 650</td></tr>
+                        <tr><td>ISBN: 130-4567890123</td></tr>
+                    </table>
+                </td>
+                <td>Author Name 5</td>
+                <td>Genre 5</td>
+                <td>Not Available</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div id="registration">
+    <h2 id="register"><i>Register</i></h2>
+    <form>
+        <label for="First_Name"><b>First Name:</b></label>
+        <input type="text" id="First_Name" name="First name" required> 
+        <br><br>
+        <label for="Last_Name"><b>Last Name:</b></label>
+        <input type="text" id="last_Name" name="Last name" required> 
+        <br><br>
+        <label for="age"><b>Age:</b></label>
+        <input type="number" id="age" name="Age" min="5" max="100" required> 
+        <br><br>
+        <label for="dob"><b>Date of Birth:</b></label>
+        <input type="date" id="dob" name="Age" required> 
+        <br><br>
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="mail id" placeholder="abc@gmail.com" required> 
+        <br><br>
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="confirm password"><b>Confirm Password:</b></label>
+        <input type="password" id="confirm password" name="confirm password" required>
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
